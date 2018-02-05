@@ -1,5 +1,5 @@
 library("pracma")
-# Was experimenting with different ways to print out the matrix XXXYYYYYYY
+# Was experimenting with different ways to print out the matrix XXXYYYYYYYZZZZZ
 # For most of these you need to load extra packages using require/library function 
 #require(grDevices)
 #require(sna)
