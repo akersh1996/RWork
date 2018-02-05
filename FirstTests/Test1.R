@@ -1,4 +1,4 @@
 x <- (-100:100) ^2
-plot(x,type="l") #this
+plot(x,type="l") 
 
 
