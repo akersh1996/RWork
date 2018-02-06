@@ -38,7 +38,27 @@ test4 <- function()
   print(str(attributes(obj)))
 }
 
+fac <- function(fn,n){
+  if (n == 1) {
+    1
+  }
+  else {
+    n*fn(fn,(n-1))
+  }
+}
+
+fac2 <- function(n){
+  if (n == 1) {
+    1
+  }
+  else {
+    # Recall is the function currently being called
+    n*Recall((n-1))
+  }
+}
+
 #test1()
 #test2()
 #test3()
-test4()
+#test4()
+print(fac2(100))
