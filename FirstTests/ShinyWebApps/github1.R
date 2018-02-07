@@ -11,6 +11,8 @@ runShinyExample<- function(x){
   # Next example doesnt work
   if (x==2) shiny::runGitHub("rstudio/shiny-examples", subdir="117-shinythemes")
   if (x==3) shiny::runGitHub("rstudio/shiny-examples", subdir="027-absolutely-positioned-panels")
+  if (x==4) shiny::runGitHub("rstudio/shiny-examples", subdir="063-superzip-exampler")
+  
 }
 
-runShinyExample(2)
+runShinyExample(4)
