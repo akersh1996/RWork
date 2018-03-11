@@ -15,4 +15,4 @@ runShinyExample<- function(x){
   
 }
 
-runShinyExample(4)
+runShinyExample(3)
