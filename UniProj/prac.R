@@ -49,3 +49,5 @@ qqchisq=function(x,df,main=NULL) {
   ords=qchisq((1:n)/(n+1),df)
   plot(ords,y,main=main)
 }
+
+
