@@ -21,6 +21,7 @@ stoch.int=function(fun1=fun.null,fun2=fun.null,w=bm,lh=T,
   }
   si
 }
+
 sde=function(fun1=fun.null,fun2=fun.null,w=bm,init=1,
              sigma=1, nu=1, alpha=1) {
   environment(fun1)=environment()
@@ -49,5 +50,19 @@ qqchisq=function(x,df,main=NULL) {
   ords=qchisq((1:n)/(n+1),df)
   plot(ords,y,main=main)
 }
+bmsim(1000,1000)
 
+si1 = stoch.int(fun1=fun.id,fun2=fun.null, sigma=2)
 
+si2 = stoch.int(fun1=fun.id, fun2=fun.null,lh=F, sigma=2)
+dif = si2-si1
+dif[5]
+dif[50]
+dif[70]
+dif[200]
+dif[600]
+dif[201]
+length
+si1[5]
+sde1<-sde(fun1=fun.id, fun2=fun.id, w=bm, init=1, sigma=-1, nu=1)
+sde1[8]

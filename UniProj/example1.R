@@ -7,6 +7,7 @@ print(m)
 
 # plot a histogram of a
 si1<-stoch.int(fun1=fun.exp, fun2=fun.sq, sigma=7, alpha=2)
+hist(si1)
 si2<-stoch.int(fun1=fun.exp, fun2=fun.sq, lh=F, sigma=7, alpha=2)
 # two evaluations of stochastic integral with different
 # endpoint conventions
